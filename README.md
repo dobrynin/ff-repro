@@ -1,6 +1,14 @@
 # ff-repro
 Attempts to reproduce https://bugzilla.mozilla.org/show_bug.cgi?id=1867816
 
+This repo follows the basic setup for using tailwind w/ vite explained here: https://tailwindcss.com/docs/guides/vite
+
+The only difference that causes the perf impact (afaict) is adding this line to `index.html`
+
+```html
+    <link rel="stylesheet" href="/src/index.css" />
+```
+
 Steps:
 1. `npm i`
 2. `npm run dev`
